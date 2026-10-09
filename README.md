@@ -31,9 +31,9 @@ p = (x, y, intensity)
 
 where:
 
-* x: horizontal coordinate.
-* y: vertical coordinate.
-* intensity: grayscale value.
+* x: Horizontal coordinate.
+* y: Vertical coordinate.
+* intensity: Grayscale value.
 
 Coordinates are sampled from the square [-1, 1] × [-1, 1].
 
@@ -57,7 +57,7 @@ These predictions provide the geometric information needed to estimate the circl
 
 The initial formulation combined displacement-vector regression with binary cross-entropy (BCE) classification.
 
-Initial loss function
+Initial Loss Function
 
 L_initial = MSE(v, v_hat) + BCE(y, p_hat)
 
@@ -224,13 +224,14 @@ These results indicate that the learned input embedding improves performance in 
 
 10. Visualizations
 
-Evaluation Results
+The repository includes visualizations for:
 
-Training Loss
+* Evaluation results.
+* Training loss.
+* Failure cases.
+* Experimental results for point-cloud size, noise robustness, model complexity, training-set size, and embedding ablation.
 
-Failure Cases
-
-The corresponding CSV files contain the numerical experimental results. The repository also includes a supplementary loss-weighting CSV and plot from the earlier formulation.
+The corresponding CSV files contain the numerical experimental results.
 
 11. Failure Cases and Limitations
 
@@ -268,35 +269,33 @@ attention-based-circle-recognition/
 ├── exp3_complexity.csv
 ├── exp4_trainsize.csv
 ├── exp5_embedding_comparison.csv
-├── exp6_loss_weighting.csv
 ├── evaluation_results.png
 ├── exp1_points.png
 ├── exp2_noise.png
 ├── exp3_complexity.png
 ├── exp4_trainsize.png
 ├── exp5_embedding_comparison.png
-├── exp6_loss_weighting.png
 ├── failure_cases.png
 ├── loss_curve.png
 ├── requirements.txt
 ├── .gitignore
 └── README.md
 
-The loss-weighting CSV and plot are retained as supplementary artifacts from the earlier formulation. The final method described here uses regression-only training.
+The final method described in this repository uses regression-only training.
 
 13. Installation
 
-Step 1: Clone the repository
+Step 1: Clone the Repository
 
 git clone https://github.com/avinashravichandran2025/attention-based-circle-recognition.git
 cd attention-based-circle-recognition
 
-Step 2: Create a virtual environment
+Step 2: Create a Virtual Environment
 
 python3 -m venv venv
 source venv/bin/activate
 
-Step 3: Install dependencies
+Step 3: Install Dependencies
 
 pip install -r requirements.txt
 
@@ -304,19 +303,19 @@ Ensure that requirements.txt lists the Python packages required by the final imp
 
 14. Running the Project
 
-Train the model
+Train the Model
 
 python train.py
 
-Evaluate the trained model
+Evaluate the Trained Model
 
 python evaluate.py
 
-Generate failure-case visualizations
+Generate Failure-Case Visualizations
 
 python generate_failures.py
 
-Run the experiments
+Run the Experiments
 
 python experiments.py
 
@@ -334,4 +333,8 @@ Contributors
 
 Project: Attention Models for Pattern Recognition — Circle Recognition Using Point Clouds.
 
-Add the names of all team members and their agreed contributions, clearly identifying individual contributions to the circle-recognition component.
+* Jeevith: [Add agreed contribution]
+* Avinash Ravichandran: [Add agreed contribution to the circle-recognition component]
+* Ashwin: [Add agreed contribution]
+
+Replace the placeholders with the team’s agreed contributions before submitting the repository.
